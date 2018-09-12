@@ -64,6 +64,9 @@ class App extends Component {
             {this.state.isAuthenticated
               ? <NavItem onClick={this.handleLogout}>Logout</NavItem>
               : <Fragment>
+                  <LinkContainer to="/settings">
+                    <NavItem>Settings</NavItem>
+                  </LinkContainer>
                   <LinkContainer to="/signup">
                     <NavItem>Signup</NavItem>
                   </LinkContainer>
